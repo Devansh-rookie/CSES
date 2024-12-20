@@ -5,6 +5,7 @@
         "random": "cpp",
         "stdexcept": "cpp",
         "utility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp"
     }
 }
