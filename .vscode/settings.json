@@ -6,6 +6,7 @@
         "stdexcept": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "unordered_set": "cpp"
     }
 }
