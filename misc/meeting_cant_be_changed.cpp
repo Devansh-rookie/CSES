@@ -48,7 +48,7 @@ bool right_max_time = false, left_max_time = false;
 }
 
 int main() {
-    setIO("check");
+    // setIO("check");
     int n;
     cin >> n;
 
@@ -68,7 +68,7 @@ int main() {
      double ans = ( double)1e18;
      double high = maxxi;
      double low = 0;
-    const  double accuracy = 10e-10;
+    const  double accuracy = 10e-7;
     // or use time's binary search
     double curr_time;
     double mid;
