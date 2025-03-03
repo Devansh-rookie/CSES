@@ -1,19 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// vector <int> integerToArray(int x)
-// {
-//     vector <int> resultArray;
-//     while (true)
-//     {
-//     resultArray.insert(resultArray.begin(), x%10);
-//     x /= 10;
-//     if(x == 0)
-//         return resultArray;
-//     }
-// }
-
-
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
@@ -22,7 +9,7 @@ int main(){
     cin >> n >> m >> q;
 
     vector<vector<int>> arr(n+2, vector<int>(m+2, 0));
-    
+
     for(int i = 1;i <= n;i++){
         for(int j = 1;j <= m;j++){
             // this is important, like very important to take input in the form of characters
@@ -46,14 +33,6 @@ int main(){
         }
     }
 
-    // ofstream fout("test.out");
-
-    // for(vector<int> i: pref){
-    //     for(int j: i){
-    //         fout << j << ' ';
-    //     }
-    //     fout << endl;
-    // }
 
     vector<vector<int>> hori(n+2, vector<int>(m+2, 0));
     vector<vector<int>> vert(n+2, vector<int>(m+2, 0));
@@ -82,7 +61,7 @@ int main(){
         ans += vert[x2][y1] - vert[x1][y1];
 
         cout << ans + pref[x2][y2] - pref[x2][y1] - pref[x1][y2] + pref[x1][y1] << endl;
-        // remove the -1's as we need the mergnings belowe it and no the ones we are already looking at 
+        // remove the -1's as we need the mergnings belowe it and no the ones we are already looking at
         // fout << pref[x2][y2] - pref[x2][y1-1] - pref[x1-1][y2] + pref[x1-1][y1-1];
     }
 
