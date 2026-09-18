@@ -1,0 +1,1 @@
+{"name":"Local: row_gcd","url":"/Users/devansh/directory1/Folder_1/Code/CSES/something/row_gcd.cpp","tests":[{"id":1789681995800,"input":"4 4\n1 25 121 169\n1 2 7 23\n","output":"2 3 8 24\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/devansh/directory1/Folder_1/Code/CSES/something/row_gcd.cpp","group":"local","local":true}

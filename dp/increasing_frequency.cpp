@@ -1,3 +1,4 @@
+#include <algorithm>
 #include<bits/stdc++.h>
 using namespace std;
 using vi = vector<int>;
@@ -16,9 +17,30 @@ void setIO(string name = "") {
 }
 
 int main() {
-    setIO();
+    setIO("");
 
+    int n, c;
+    cin >> n >> c;
 
+    vi a(n);
+    int max_elem = 0;
+    int total_c = 0;
+    for(int i = 0;i < n;i++){ cin >> a[i]; max_elem = max(max_elem, a[i]); if(a[i] == c)total_c++;}
+
+    vi best(max_elem + 1, 0);
+    int freq_c = 0;
+    int ans = total_c;
+    for(int i = 0;i < n;i++){
+        int x = a[i];
+        if(x == c){freq_c++;continue;}
+        // else{
+        //     best[x] = max(best[x] - freq_c, 0) + 1;
+        // }
+        best[x] = max(freq_c, best[x]) + 1;
+        ans = max(ans, best[x] + total_c - freq_c);
+    }
+
+    cout << ans << '\n';
 
     return 0;
 }
