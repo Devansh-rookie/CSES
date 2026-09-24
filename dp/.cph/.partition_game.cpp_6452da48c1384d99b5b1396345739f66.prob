@@ -1,0 +1,1 @@
+{"name":"Local: partition_game","url":"/Users/devansh/directory1/Folder_1/Code/CSES/dp/partition_game.cpp","tests":[{"id":1790075395769,"input":"7 4\n5 5 5 5 2 3 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/devansh/directory1/Folder_1/Code/CSES/dp/partition_game.cpp","group":"local","local":true}
